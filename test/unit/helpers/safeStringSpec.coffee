@@ -18,7 +18,8 @@ describe "helpers.safeString", ->
     expect(SpurString.safeString(1.23)).to.equal("1.23")
 
   it "with date", ->
-    expect(SpurString.safeString(new Date(2015, 5, 10))).to.equal("Wed Jun 10 2015 00:00:00 GMT-0700 (PDT)")
+    expected = new Date(2015, 5, 10).toString()
+    expect(SpurString.safeString(new Date(2015, 5, 10))).to.equal(expected)
 
   it "with object", ->
     expect(SpurString.safeString({prop1: 123, prop2: 321})).to.equal("[object Object]")
