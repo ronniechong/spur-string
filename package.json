@@ -1,0 +1,39 @@
+{
+  "name": "spur-string",
+  "version": "0.0.0",
+  "description": "String utilities to be used with the Spur Framework.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --opts ./test/mocha.opts ./test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/opentable/spur-string.git"
+  },
+  "keywords": [
+    "node",
+    "common",
+    "library",
+    "util"
+  ],
+  "author": {
+    "name": "Agustin Colchado",
+    "email": "agustin@colchado.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/opentable/spur-string/issues"
+  },
+  "homepage": "https://github.com/opentable/spur-string",
+  "dependencies": {
+    "coffee-script": "^1.9.3",
+    "lodash": "^3.0.0",
+    "require-all": "^1.1.0"
+  },
+  "devDependencies": {
+    "sinon-chai": "^2.6.0",
+    "chai": "^1.10.0",
+    "sinon": "^1.12.2",
+    "mocha": "^2.1.0"
+  }
+}
