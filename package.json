@@ -27,7 +27,6 @@
   "homepage": "https://github.com/opentable/spur-string",
   "dependencies": {
     "coffee-script": "^1.9.3",
-    "lodash": "^3.0.0",
     "require-all": "^1.1.0"
   },
   "devDependencies": {

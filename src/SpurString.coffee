@@ -1,6 +1,5 @@
 fs         = require "fs"
 path       = require "path"
-_          = require "lodash"
 requireAll = require "require-all"
 
 class SpurString
@@ -26,7 +25,7 @@ class SpurString
   loadPluginsByObject:(pluginsObject)->
     for pluginName, plugin of pluginsObject
       do(pluginName, plugin) =>
-        if _.isFunction plugin
+        if typeof plugin is 'function'
           @[pluginName] = plugin.bind(@)
           @plugins.push(pluginName)
 
