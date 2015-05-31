@@ -7,4 +7,4 @@ describe "SpurString", ->
 
     console.log "Plugins: ", SpurString.plugins.join(", ")
 
-    expect(SpurString.plugins.length).to.equal 12
+    expect(SpurString.plugins.length).to.equal 13
