@@ -1,6 +1,5 @@
 SpurString = require "../../src/SpurString"
 SpurStringIntegration = require "../../"
-_ = require "lodash"
 
 describe "SpurString", ->
 
