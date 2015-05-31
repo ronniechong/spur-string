@@ -1,6 +1,7 @@
 var path              = require("path");
 global.chai           = require('chai');
 global.expect         = chai.expect
+global.assert         = chai.assert
 global.srcDir         = path.resolve(__dirname, "../src");
 global.rootDir        = path.resolve(__dirname, "../");
 

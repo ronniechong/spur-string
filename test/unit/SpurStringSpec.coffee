@@ -4,5 +4,7 @@ _ = require "lodash"
 describe "SpurString", ->
 
   it "should load plugins", ->
-    console.log "Plugins: ", SpurString.plugins
-    expect(SpurString.plugins.length).to.equal(4)
+
+    console.log "Plugins: ", SpurString.plugins.join(", ")
+
+    expect(SpurString.plugins.length).to.equal 13
