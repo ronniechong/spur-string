@@ -1,6 +1,6 @@
 {
   "name": "spur-string",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "String utilities to be used with the Spur Framework.",
   "main": "index.js",
   "scripts": {
