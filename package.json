@@ -1,6 +1,6 @@
 {
   "name": "spur-string",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "String utilities to be used with the Spur Framework.",
   "main": "index.js",
   "scripts": {
@@ -11,10 +11,10 @@
     "url": "git://github.com/opentable/spur-string.git"
   },
   "keywords": [
-    "node",
-    "common",
-    "library",
-    "util"
+    "spur",
+    "spur-framework",
+    "util",
+    "string"
   ],
   "author": {
     "name": "Agustin Colchado",
@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/opentable/spur-string",
   "dependencies": {
-    "coffee-script": "^1.9.3",
+    "coffee-script": "1.9.1",
     "require-all": "^1.1.0"
   },
   "devDependencies": {
