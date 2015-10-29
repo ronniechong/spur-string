@@ -5,6 +5,12 @@ String utilities to be used with the [Spur Framework](https://opentable.github.i
 [![NPM version](https://badge.fury.io/js/spur-string.png)](http://badge.fury.io/js/spur-string)
 [![Build Status](https://travis-ci.org/opentable/spur-string.svg?branch=master)](https://travis-ci.org/opentable/spur-string)
 
+# About the Spur Framework
+
+The Spur Framework is a collection of commonly used Node.JS libraries used to create common application types with shared libraries.
+
+[Visit NPMJS.org for a full list of Spur Framework libraries](https://www.npmjs.com/browse/keyword/spur-framework) >>
+
 # Usage
 
 ## Install from NPM
