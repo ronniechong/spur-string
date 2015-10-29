@@ -5,15 +5,15 @@ String utilities to be used with the [Spur Framework](https://opentable.github.i
 [![NPM version](https://badge.fury.io/js/spur-string.png)](http://badge.fury.io/js/spur-string)
 [![Build Status](https://travis-ci.org/opentable/spur-string.svg?branch=master)](https://travis-ci.org/opentable/spur-string)
 
-## Usage
+# Usage
 
-### Install from NPM
+## Install from NPM
 
 ```shell
 npm install --save spur-string
 ```
 
-### Require and use the module
+## Require and use the module
 
 ```javascript
 /* You can use any aliase you would
@@ -24,7 +24,7 @@ SpurString("   String to trim   ").trim()
 // => "String to trim"
 ```
 
-## API ##
+# API
 
 #### .clean(string) -> string
 
@@ -111,37 +111,40 @@ SpurString().trimRight("String to trim       ");
 // => "String to trim"
 ```
 
-## Maintainers
+# Contributing
+
+## We accept pull requests
+
+Please send in pull requests and they will be reviewed in a timely manner. Please review this [generic guide to submitting a good pull requests](https://github.com/blog/1943-how-to-write-the-perfect-pull-request). The only things we ask in addition are the following:
+
+ * Please submit small pull requests
+ * Provide a good description of the changes
+ * Code changes must include tests
+ * Be nice to each other in comments. :innocent:
+
+## Style guide
+
+The majority of the settings are controlled using an [EditorConfig](.editorconfig) configuration file. To use it [please download a plugin](http://editorconfig.org/#download) for your editor of choice.
+
+## All tests should pass
+
+To run the test suite, first install the dependancies, then run `npm test`
+
+```bash
+$ npm install
+$ npm test
+```
+
+# Maintainers
 
 This library is maintained by
 
   - Agustin Colchado – ***[@acolchado](https://github.com/acolchado)***
 
-## License
+# License
 
-The MIT License (MIT)
+[MIT](LICENSE)
 
-Copyright (c) 2015 Spur Framework
-Copyright (c) 2015 OpenTable Inc. and other contributors
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-## Credit
+# Credit
 
 This module draws inspiration from the [underscore.string](https://github.com/epeli/underscore.string) maintained by [Esa-Matti Suuronen](https://github.com/epeli) and [Christoph Hermann](https://github.com/stoeffel). The reason for the porting of this module simplify it for the use in Node.JS and the Spur Framework.
