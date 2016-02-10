@@ -60,7 +60,7 @@ SpurString().isBlank("\n"); // => true
 SpurString().isBlank(" "); // => true
 SpurString().isBlank(null); // => true
 SpurString().isBlank(undefined); // => true
-SpurString().isBlank("Spur"); // => true
+SpurString().isBlank("Spur"); // => false
 ```
 
 #### .lines(string) -> array
@@ -104,7 +104,7 @@ SpurString().trim("   String to trim    ");
 Removes empty spaces to the left end of a string.
 
 ```javascript
-SpurString().trimLeft("String to trim       ");
+SpurString().trimLeft("       String to trim");
 // => "String to trim"
 ```
 
