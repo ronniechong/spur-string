@@ -4,7 +4,7 @@
   "description": "String utilities to be used with the Spur Framework.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --opts ./test/mocha.opts ./test/"
+    "test": "mocha --opts ./test/mocha.opts ./test/ && istanbul report text-summary lcov"
   },
   "repository": {
     "type": "git",
@@ -30,9 +30,12 @@
     "require-all": "^1.1.0"
   },
   "devDependencies": {
-    "sinon-chai": "^2.6.0",
-    "chai": "^1.10.0",
-    "sinon": "^1.12.2",
-    "mocha": "^2.1.0"
+    "chai": "^3.5.0",
+    "coffee-coverage": "^1.0.1",
+    "coveralls": "^2.11.6",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.4.5",
+    "sinon": "^1.17.3",
+    "sinon-chai": "^2.8.0"
   }
 }
