@@ -1,8 +1,8 @@
-import SpurString from "../../../src/SpurString"
+import SpurString from '../../../src/SpurString';
 
-describe("plugins.trimLeft", () => {
-  it("should trim", () => {
-    expect(SpurString.trimLeft("       foo bar")).to.equal("foo bar")
-    expect(SpurString.trimLeft("       foo bar ")).to.equal("foo bar ")
-  })
-})
+describe('plugins.trimLeft', () => {
+  it('should trim', () => {
+    expect(SpurString.trimLeft('       foo bar')).to.equal('foo bar');
+    expect(SpurString.trimLeft('       foo bar ')).to.equal('foo bar ');
+  });
+});

@@ -1,17 +1,23 @@
 {
-  "extends": "opentable",
+  "extends": "../.eslintrc",
   "env": {
     "es6": true,
     "mocha": true,
     "node": true,
     "jasmine": true
   },
+  "globals": {
+    "sinon": true,
+    "injector": true,
+    "testServer": true,
+    "nock": true,
+    "_": true,
+    "assert": true
+  },
   "rules": {
     "no-unused-expressions": 0,
     "max-len": 0,
-    "arrow-body-style": 0
-  },
-  "globals": {
-    "assert": false
+    "arrow-body-style": 0,
+    "no-console": 0
   }
 }

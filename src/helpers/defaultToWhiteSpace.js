@@ -1,9 +1,11 @@
-module.exports = function(characters) {
+module.exports = function (characters) {
   if (!characters) {
-    return "\\s"
+    return '\\s';
   }
+
   if (characters.source) {
-    return characters.source
+    return characters.source;
   }
-  return `[${this.escapeRegExp(characters)}]`
-}
+
+  return `[${this.escapeRegExp(characters)}]`;
+};

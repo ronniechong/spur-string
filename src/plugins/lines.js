@@ -1,6 +1,7 @@
-module.exports = source => {
+module.exports = function (source) {
   if (source == null) {
-    return []
+    return [];
   }
-  return String(source).split(/\r?\n/)
-}
+
+  return String(source).split(/\r?\n/);
+};

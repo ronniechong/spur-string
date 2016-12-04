@@ -4,7 +4,6 @@ String utilities to be used with the [Spur Framework](https://opentable.github.i
 
 [![NPM version](https://badge.fury.io/js/spur-string.png)](http://badge.fury.io/js/spur-string)
 [![Build Status](https://travis-ci.org/opentable/spur-string.svg?branch=master)](https://travis-ci.org/opentable/spur-string)
-[![Coverage Status](https://coveralls.io/repos/github/opentable/spur-string/badge.svg?branch=master)](https://coveralls.io/github/opentable/spur-string?branch=master)
 
 # About the Spur Framework
 
