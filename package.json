@@ -2,15 +2,16 @@
   "name": "spur-string",
   "version": "0.0.2",
   "description": "String utilities to be used with the Spur Framework.",
-  "main": "dist/SpurString.js",
+  "main": "lib/SpurString.js",
   "scripts": {
-    "build": "babel src -d dist",
-    "dev": "babel --watch src -d dist",
+    "build": "babel src -d lib --source-maps",
+    "dev": "babel --watch src -d lib",
     "lint": "eslint .",
     "pretest": "npm run lint",
-    "test": "babel-node --debug node_modules/mocha/bin/_mocha ./test/",
-    "precoveralls": "npm run lint",
-    "coveralls": "babel-node node_modules/isparta/bin/isparta cover ./node_modules/mocha/bin/_mocha --report lcovonly ./test/ && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+    "test-unit": "babel-node --debug node_modules/mocha/bin/_mocha ./test/unit/",
+    "test-integration": "babel-node --debug node_modules/mocha/bin/_mocha ./test/integration/",
+    "test": "npm run test-unit && npm run test-integration",
+    "build-and-test": "npm run build && npm test"
   },
   "repository": {
     "type": "git",
@@ -36,14 +37,13 @@
   },
   "devDependencies": {
     "babel-cli": "^6.5.1",
+    "babel-plugin-add-module-exports": "^0.2.1",
     "babel-preset-es2015": "^6.5.0",
     "babel-preset-es2015-loose": "^7.0.0",
+    "eslint-plugin-import": "^1.8.1",
     "chai": "^3.5.0",
-    "coveralls": "^2.11.6",
     "eslint": "^2.4.0",
-    "eslint-config-opentable": "^2.0.1",
-    "isparta": "^4.0.0",
-    "mocha": "^2.4.5",
-    "mocha-lcov-reporter": "^1.2.0"
+    "eslint-config-opentable": "^4.0.0",
+    "mocha": "^2.4.5"
   }
 }

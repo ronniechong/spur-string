@@ -1,3 +1,3 @@
-module.exports = function(source) {
-  return this.safeString(source).trimLeft()
-}
+module.exports = function (source) {
+  return this.safeString(source).trimLeft();
+};

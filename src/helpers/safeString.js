@@ -1,6 +1,7 @@
-module.exports = object => {
+module.exports = function (object) {
   if (object == null) {
-    return ""
+    return '';
   }
-  return `${object.toString()}`
-}
+
+  return `${object.toString()}`;
+};
