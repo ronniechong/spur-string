@@ -1,5 +1,5 @@
 // NEED to use require vs import to test module export for backward compatability
-const mainModule = require('../../');
+const mainModule = require('../../src/SpurString');
 
 describe('Integration', () => {
   describe('Main Module Integration Tests', () => {
