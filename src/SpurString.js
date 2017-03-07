@@ -22,9 +22,9 @@ class SpurString {
       });
 
       this.loadPluginsByObject(pluginsObject);
+    } else {
+      console.error(`Plugin path "${folderPath}" was not found`);
     }
-
-    console.error(`Plugin path "${folderPath}" was not found`);
   }
 
   loadPluginsByObject(pluginsObject) {
